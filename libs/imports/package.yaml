@@ -1,0 +1,32 @@
+defaults:
+  local: ../../package-defaults.yaml
+name: imports
+version: '0.1.0'
+synopsis: Very common imports
+description: ! 'A single module combining some common imports. Designed to be
+
+  usable as a drop-in Prelude replacement.
+
+
+  Also exports common orphan instances.'
+category: Utilities
+author: Social Technologies LTD
+maintainer: Social Technologies LTD <technology@social.network>
+copyright: (c) 2018 Social Technologies LTD
+license: AGPL-3
+dependencies:
+- base
+- extra
+- unliftio
+- unliftio-core
+- containers
+- unordered-containers
+- text
+- bytestring
+- mtl
+- transformers
+- deepseq
+- tinylog
+library:
+  source-dirs: src
+stability: experimental

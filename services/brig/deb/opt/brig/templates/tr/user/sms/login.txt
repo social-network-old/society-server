@@ -1,0 +1,3 @@
+Society giriş kodunuz ${code}.
+
+Giriş yapmak için ${url} adresine gidebilir ya da bu kodu Society uygulamasına girebilirsiniz: ${code}.

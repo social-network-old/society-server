@@ -1,0 +1,5 @@
+Package: brig-index
+Version: <<VERSION_NUMBER>>+<<BUILD_NUMBER>>
+Maintainer: Social Technologies LTD <technology@social.network>
+Architecture: <<ARCHITECTURE>>
+Description: Brig Elasticsearch Tools

@@ -1,0 +1,1 @@
+Selam, Society doğrulama kodunuz: ${code}. Bir kez daha, kodunuz: ${code}

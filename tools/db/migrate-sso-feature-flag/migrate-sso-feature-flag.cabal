@@ -1,0 +1,50 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b23ff3a5117d9703a8b229f72618083015c92bf83b6a79de67c339b275def085
+
+name:           migrate-sso-feature-flag
+version:        1.0.0
+synopsis:       Backfill sso feature flag into teams that already have an IdP.
+category:       Network
+author:         Social Technologies LTD
+maintainer:     Social Technologies LTD <technology@social.network>
+copyright:      (c) 2018 Social Technologies LTD
+license:        AGPL-3
+build-type:     Simple
+
+executable migrate-sso-feature-flag
+  main-is: Main.hs
+  other-modules:
+      Options
+      Work
+      Paths_migrate_sso_feature_flag
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes BangPatterns ConstraintKinds DataKinds DefaultSignatures DerivingStrategies DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase FlexibleContexts FlexibleInstances FunctionalDependencies GADTs InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns NoImplicitPrelude OverloadedStrings PackageImports PatternSynonyms PolyKinds QuasiQuotes RankNTypes ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators UndecidableInstances ViewPatterns
+  ghc-options: -O2 -Wall -fwarn-tabs -optP-Wno-nonportable-include-path -funbox-strict-fields -threaded -with-rtsopts=-N -with-rtsopts=-T -rtsopts
+  build-depends:
+      attoparsec
+    , base
+    , brig-types
+    , bytestring
+    , bytestring-conversion
+    , cassandra-util
+    , conduit
+    , extended
+    , galley
+    , galley-types
+    , imports
+    , lens
+    , mtl
+    , optparse-applicative
+    , text
+    , time
+    , tinylog
+    , types-common
+    , unliftio
+    , uuid
+  default-language: Haskell2010

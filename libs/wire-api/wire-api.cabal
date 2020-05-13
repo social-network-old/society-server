@@ -1,0 +1,141 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 94b75597d882804638d7c8f51b2a63a1a43318937ebe569d6d5f4b28fa54a2a6
+
+name:           society-api
+version:        0.1.0
+description:    API types of the Society collaboration platform
+category:       Network
+author:         Social Technologies LTD
+maintainer:     Social Technologies LTD <technology@social.network>
+copyright:      (c) 2020 Social Technologies LTD
+license:        AGPL-3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Society.API.Arbitrary
+      Society.API.Asset
+      Society.API.Asset.V3
+      Society.API.Asset.V3.Resumable
+      Society.API.Call.TURN
+      Society.API.Connection
+      Society.API.Conversation
+      Society.API.Conversation.Bot
+      Society.API.Conversation.Code
+      Society.API.Conversation.Member
+      Society.API.Conversation.Role
+      Society.API.Conversation.Typing
+      Society.API.CustomBackend
+      Society.API.Event.Conversation
+      Society.API.Event.Team
+      Society.API.Message
+      Society.API.Message.Proto
+      Society.API.Notification
+      Society.API.Properties
+      Society.API.Provider
+      Society.API.Provider.Bot
+      Society.API.Provider.External
+      Society.API.Provider.Service
+      Society.API.Provider.Service.Tag
+      Society.API.Push.Token
+      Society.API.Push.V2.Token
+      Society.API.Swagger
+      Society.API.Team
+      Society.API.Team.Conversation
+      Society.API.Team.Feature
+      Society.API.Team.Invitation
+      Society.API.Team.LegalHold
+      Society.API.Team.LegalHold.External
+      Society.API.Team.Member
+      Society.API.Team.Permission
+      Society.API.Team.Role
+      Society.API.Team.SearchVisibility
+      Society.API.User
+      Society.API.User.Activation
+      Society.API.User.Auth
+      Society.API.User.Client
+      Society.API.User.Client.Prekey
+      Society.API.User.Handle
+      Society.API.User.Identity
+      Society.API.User.Password
+      Society.API.User.Profile
+      Society.API.User.RichInfo
+      Society.API.User.Search
+  other-modules:
+      Paths_society_api
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes BangPatterns ConstraintKinds DataKinds DefaultSignatures DerivingStrategies DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase FlexibleContexts FlexibleInstances FunctionalDependencies GADTs InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns NoImplicitPrelude OverloadedStrings PackageImports PatternSynonyms PolyKinds QuasiQuotes RankNTypes ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators UndecidableInstances ViewPatterns
+  ghc-options: -O2 -Wall -fwarn-tabs -optP-Wno-nonportable-include-path
+  build-depends:
+      QuickCheck >=2.9
+    , aeson >=0.6
+    , attoparsec >=0.10
+    , base >=4 && <5
+    , base64-bytestring >=1.0
+    , bytestring >=0.9
+    , bytestring-conversion >=0.2
+    , case-insensitive
+    , cassandra-util
+    , containers >=0.5
+    , cryptonite >=0.11
+    , currency-codes >=2.0
+    , errors
+    , exceptions >=0.10.0
+    , extra
+    , hashable
+    , hostname-validate
+    , imports
+    , iproute >=1.5
+    , iso3166-country-codes >=0.2
+    , iso639 >=0.1
+    , lens >=4.12
+    , memory >=0.11
+    , mime >=0.4
+    , network-uri >=2.6
+    , pem >=0.2
+    , protobuf >=0.2
+    , quickcheck-instances >=0.3.16
+    , random
+    , safe >=0.3
+    , string-conversions
+    , swagger >=0.1
+    , text >=0.11
+    , time >=1.4
+    , transformers >=0.3
+    , types-common >=0.16
+    , unordered-containers >=0.2
+    , uri-bytestring >=0.2
+    , uuid >=1.3
+  default-language: Haskell2010
+
+test-suite society-api-tests
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Test.Society.API.Call.TURN
+      Test.Society.API.Team
+      Test.Society.API.User
+      Paths_society_api
+  hs-source-dirs:
+      test/unit
+  default-extensions: AllowAmbiguousTypes BangPatterns ConstraintKinds DataKinds DefaultSignatures DerivingStrategies DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase FlexibleContexts FlexibleInstances FunctionalDependencies GADTs InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns NoImplicitPrelude OverloadedStrings PackageImports PatternSynonyms PolyKinds QuasiQuotes RankNTypes ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators UndecidableInstances ViewPatterns
+  ghc-options: -O2 -Wall -fwarn-tabs -optP-Wno-nonportable-include-path -threaded -with-rtsopts=-N
+  build-depends:
+      aeson >=0.6
+    , aeson-qq
+    , base
+    , containers >=0.5
+    , imports
+    , lens
+    , tasty
+    , tasty-hunit
+    , tasty-quickcheck
+    , society-api
+  default-language: Haskell2010

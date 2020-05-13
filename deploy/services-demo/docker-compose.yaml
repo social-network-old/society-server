@@ -1,0 +1,160 @@
+networks:
+  dockerephemeral_demo_society:
+    external: true
+
+version: '2'
+services:
+  brig:
+    image: quay.io/society/brig
+    depends_on:
+      - cargohold
+      - galley
+      - gundeck
+    ports:
+      - 127.0.0.1:8082:8082
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/brig
+      - -c
+      - /configs/conf/brig.demo-docker.yaml
+    working_dir: /configs
+    environment:
+      - AWS_REGION=eu-west-1
+      - AWS_ACCESS_KEY_ID=dummy
+      - AWS_SECRET_ACCESS_KEY=dummy
+    external_links:
+      - demo_society_cassandra:cassandra
+      - demo_society_elasticsearch:elasticsearch
+      - demo_society_dynamodb:dynamodb
+      - demo_society_sqs:sqs
+      - demo_society_smtp:smtp
+    networks:
+      - dockerephemeral_demo_society
+
+  galley:
+    image: quay.io/society/galley
+    ports:
+      - 127.0.0.1:8085:8085
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/galley
+      - -c
+      - /configs/conf/galley.demo-docker.yaml
+    working_dir: /configs
+    environment:
+      - AWS_REGION=eu-west-1
+      - AWS_ACCESS_KEY_ID=dummy
+      - AWS_SECRET_ACCESS_KEY=dummy
+    external_links:
+      - demo_society_cassandra:cassandra
+    networks:
+      - dockerephemeral_demo_society
+
+  gundeck:
+    image: quay.io/society/gundeck
+    ports:
+      - 127.0.0.1:8086:8086
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/gundeck
+      - -c
+      - /configs/conf/gundeck.demo-docker.yaml
+    working_dir: /configs
+    environment:
+      - AWS_REGION=eu-west-1
+      - AWS_ACCESS_KEY_ID=dummy
+      - AWS_SECRET_ACCESS_KEY=dummy
+    external_links:
+      - demo_society_redis:redis
+      - demo_society_sqs:sqs
+      - demo_society_localstack:sns
+    networks:
+      - dockerephemeral_demo_society
+
+  cannon:
+    image: quay.io/society/cannon
+    ports:
+        - 127.0.0.1:8083:8083
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/cannon
+      - -c
+      - /configs/conf/cannon.demo-docker.yaml
+    working_dir: /configs
+    networks:
+      - dockerephemeral_demo_society
+
+  cargohold:
+    image: quay.io/society/cargohold
+    ports:
+     - 127.0.0.1:8084:8084
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/cargohold
+      - -c
+      - /configs/conf/cargohold.demo-docker.yaml
+    working_dir: /configs
+    external_links:
+      - demo_society_s3:s3
+    networks:
+      - dockerephemeral_demo_society
+
+  proxy:
+    image: quay.io/society/proxy
+    ports:
+      - 127.0.0.1:8087:8087
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/proxy
+      - -c
+      - /configs/conf/proxy.demo.yaml
+    working_dir: /configs
+    networks:
+      - dockerephemeral_demo_society
+
+  spar:
+    image: quay.io/society/spar
+    ports:
+      - 127.0.0.1:8088:8088
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/bin/spar
+      - -c
+      - /configs/conf/spar.demo-docker.yaml
+    working_dir: /configs
+    external_links:
+      - demo_society_cassandra:cassandra
+    networks:
+      - dockerephemeral_demo_society
+
+  nginz:
+    image: quay.io/society/nginz
+    depends_on:
+      - cargohold
+      - gundeck
+      - cannon
+      - galley
+      - proxy
+      - brig
+      - spar
+    ports:
+      - 127.0.0.1:8080:8080
+      - 127.0.0.1:8081:8081
+    volumes:
+      - ./:/configs
+    entrypoint:
+      - /usr/sbin/nginx
+      - -p
+      - /configs
+      - -c
+      - /configs/conf/nginz/nginx-docker.conf
+    working_dir: /configs
+    networks:
+      - dockerephemeral_demo_society

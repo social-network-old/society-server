@@ -1,0 +1,3 @@
+Su código de Society es ${code}.
+
+Abrir ${url} para verificar tu número o introducir manualmente el código Society en la parte superior.

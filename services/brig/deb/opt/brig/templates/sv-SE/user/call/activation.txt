@@ -1,0 +1,1 @@
+Hej, din verifieringskod för Society är: ${code} En gång till, din kod är: ${code}

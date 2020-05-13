@@ -1,0 +1,23 @@
+YOUR NEW TEAM.
+You have just created a team called ${team_name} on Society with ${email}.
+
+Your 30–day free trial starts today.
+
+Society combines strong encryption, a rich feature set and ease-of-use in one app
+like never before. Works on all popular platforms.
+
+Invite your teammates [${url}]If you can’t click the button, copy and paste this
+link to your browser:
+
+${url}
+
+If you have any questions, please contact us
+[https://help.social.network/hc/en-us/requests/new].
+
+Team ID: ${team_id}
+
+
+--------------------------------------------------------------------------------
+
+Privacy [https://social.network/legal/] · Report Misuse [misuse@social.network]
+© Social Technologies LTD. ALL RIGHTS RESERVED.

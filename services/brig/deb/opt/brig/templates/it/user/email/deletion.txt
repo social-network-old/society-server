@@ -1,0 +1,17 @@
+Society
+
+
+Ciao ${name},
+
+Abbiamo ricevuto una richiesta per eliminare il tuo account su Society. Visita il link qui sotto entro 10 minuti per eliminare tutte le tue conversazioni, contenuti e collegamenti
+
+${url}
+
+Se non sei stato tu a richiedere l'eliminazione, reimposta la password.
+
+Il team di Society
+
+
+(c) Social Technologies LTD
+
+Informativa sulla privacy |  Riporta uso improprio

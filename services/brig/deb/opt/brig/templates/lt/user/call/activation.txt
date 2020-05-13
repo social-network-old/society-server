@@ -1,0 +1,1 @@
+Sveiki, jūsų „Society“ patvirtinimo kodas yra: ${code}. Dar kartą, jūsų kodas yra: ${code}

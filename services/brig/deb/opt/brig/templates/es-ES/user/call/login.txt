@@ -1,0 +1,1 @@
+Hola, su código de inicio de sesion Society es: ${code} una vez más, su código es: ${code}

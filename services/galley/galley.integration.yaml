@@ -1,0 +1,45 @@
+galley:
+  host: 127.0.0.1
+  port: 8085
+
+cassandra:
+  endpoint:
+    host: 127.0.0.1
+    port: 9042
+  keyspace: galley_test
+
+brig:
+  host: 0.0.0.0
+  port: 8082
+
+gundeck:
+  host: 127.0.0.1
+  port: 8086
+
+spar:
+  host: 127.0.0.1
+  port: 8088
+
+settings:
+  httpPoolSize: 128
+  maxTeamSize: 32
+  maxFanoutSize: 18
+  maxConvSize: 16
+  intraListing: false
+  conversationCodeURI: https://app.social.network/join/
+  concurrentDeletionEvents: 1024
+  deleteConvThrottleMillis: 0
+  enableIndexedBillingTeamMembers: true
+
+  featureFlags:  # see #RefConfigOptions in `/docs/reference`
+    sso: disabled-by-default
+    legalhold: disabled-by-default
+    teamSearchVisibility: disabled-by-default
+
+logLevel: Info
+logNetStrings: false
+
+journal: # if set, journals; if not set, disables journaling
+  queueName: integration-team-events.fifo
+  endpoint: http://localhost:4568 # https://sqs.eu-west-1.amazonaws.com
+  region: eu-west-1

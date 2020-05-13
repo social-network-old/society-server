@@ -1,0 +1,26 @@
+# Produces intermediate docker image with all executables under /dist
+
+# Requires docker version >= 17.05 (requires support for multi-stage builds)
+# Requires to have created the society-server-builder and society-server-deps docker images (run `make` in this directory)
+# Usage example:
+#   (from society-server root directory)
+#   docker build -f build/alpine/Dockerfile.intermediate .
+
+ARG builder=quay.io/society/alpine-builder
+ARG deps=quay.io/society/alpine-deps
+
+#--- Builder stage ---
+FROM ${builder} as builder
+
+WORKDIR /society-server/
+
+COPY . /society-server/
+
+RUN make clean install
+
+#--- Minified stage ---
+FROM ${deps}
+
+COPY --from=builder /society-server/dist/ /dist/
+# brig also needs some templates.
+COPY --from=builder /society-server/services/brig/deb/opt/brig/templates/ /dist/templates/

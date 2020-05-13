@@ -1,0 +1,17 @@
+Society
+
+
+Olá ${name},
+
+Nós recebemos uma solicitação para excluir sua conta Society. Visite o link abaixo, dentro de 10 minutos para apagar todas as suas conversas, conteúdo e conexões
+
+${url}
+
+Se você não solicitou isso, redefina sua senha.
+
+Atenciosamente, Equipe Society
+
+
+(c) Social Technologies LTD
+
+Política de privacidade |  Reportar Abuso

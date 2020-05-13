@@ -1,0 +1,15 @@
+[package]
+name    = "zauth-c"
+version = "3.0.0"
+authors = ["Social Technologies LTD <technology@social.network>"]
+license = "AGPL-3.0"
+
+[lib]
+name       = "zauth"
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = ">= 0.2"
+
+[dependencies.zauth]
+path = "../libzauth"

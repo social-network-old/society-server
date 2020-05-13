@@ -1,0 +1,3 @@
+Society kodunuz ${code}.
+
+${url} adresine açarak numaranızı doğrulayabilir ya da alttaki kodu Society'a elle girerek doğrulayabilirsiniz.

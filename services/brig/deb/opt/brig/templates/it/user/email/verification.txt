@@ -1,0 +1,18 @@
+Society
+
+
+Ciao,
+
+${email} è stato registrato su Society. Inserisci questo codice per verificare il tuo indirizzo email e creare il tuo account.
+
+${code}
+
+Si prega di non rispondere a questo messaggio.
+
+Se non sei stato tu a create un account Society con questa e-mail, si prega di visitare https://help.social.network
+
+
+
+(c) Social Technologies LTD
+
+Informativa sulla privacy |  Riporta uso improprio

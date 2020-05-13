@@ -1,0 +1,3 @@
+Din kod för Society är ${code}.
+
+Öppna ${url} för att verifiera ditt nummer eller skriv in koden manuellt i Society.

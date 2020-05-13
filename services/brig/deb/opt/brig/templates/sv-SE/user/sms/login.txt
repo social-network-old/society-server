@@ -1,0 +1,3 @@
+Din inloggningskod till Society är ${code}.
+
+Gå in på ${url} för att logga in, eller skriv in denna kod i Society appen: ${code}.

@@ -1,0 +1,1 @@
+Selam, Society giriş kodunuz: ${code} Bir kez daha, kodunuz: ${code}

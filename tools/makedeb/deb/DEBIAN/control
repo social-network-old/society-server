@@ -1,0 +1,5 @@
+Package: makedeb
+Maintainer: Social Technologies LTD <technology@social.network>
+Version: <<VERSION_NUMBER>>+<<BUILD_NUMBER>>
+Architecture: <<ARCHITECTURE>>
+Description: Create debian archives.

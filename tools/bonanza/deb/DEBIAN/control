@@ -1,0 +1,6 @@
+Package: bonanza
+Maintainer: Social Technologies LTD <technology@social.network>
+Version: <<VERSION_NUMBER>>+<<BUILD_NUMBER>>
+Architecture: <<ARCHITECTURE>>
+Depends: libgeoip1, zlib1g, libsnappy1
+Description: Log Massager

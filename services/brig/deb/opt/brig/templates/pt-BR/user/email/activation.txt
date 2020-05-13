@@ -1,0 +1,22 @@
+Society
+
+
+Olá,
+
+Seu endereço de e-mail ${email} foi usado para criar uma conta Society. Por favor, confirme o seu email.
+
+Siga o link abaixo para verificar o seu e-mail. Você não será capaz de usar o Society até que você confirme sua conta.
+
+
+${url}
+
+Por favor, não responda a esta mensagem.
+
+Se você não criou uma conta Society usando este endereço de e-mail, por favor visite https://help.social.network
+
+
+
+
+(c) Social Technologies LTD
+
+Política de privacidade |  Reportar Abuso

@@ -1,0 +1,1 @@
+Hello, your Society verification code is: ${code}. Once again, your code is: ${code}

@@ -1,0 +1,5 @@
+Package: cargohold-integration
+Version: <<VERSION_NUMBER>>+<<BUILD_NUMBER>>
+Maintainer: Social Technologies LTD <technology@social.network>
+Architecture: amd64
+Description: Integration Tests for Cargohold

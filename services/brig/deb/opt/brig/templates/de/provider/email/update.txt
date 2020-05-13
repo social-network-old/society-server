@@ -1,0 +1,17 @@
+BESTÄTIGE DEINE E-MAIL-ADRESSE
+${email} wurde als deine neue E-Mail-Adresse auf Society registriert. Klicke auf
+den nachstehenden Button, um deine neue Adresse zu bestätigen.
+
+Überprüfe [${url}]Falls du nicht auf den Button klicken kannst, kopiere den Link
+und füge ihn in deinem Browser ein:
+
+${url}
+
+Wenn Du Fragen hast, bitte kontaktiere uns
+[https://help.social.network/hc/de/requests/new].
+
+
+--------------------------------------------------------------------------------
+
+Datenschutz [https://social.network/legal/] · Missbrauch melden [misuse@social.network]
+© Social Technologies LTD. ALLE RECHTE VORBEHALTEN.

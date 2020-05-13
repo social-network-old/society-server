@@ -1,0 +1,18 @@
+Society
+
+
+Hej,
+
+${email} användes för att registrera sig på Society. Ange denna kod för att bekräfta din e-postadress och skapa ditt konto.
+
+${code}
+
+Vänligen svara inte på detta meddelande.
+
+Om detta inte var du som skapa ett Society konto med denna e-postadress, vänligen kontakta oss https://help.social.network
+
+
+
+(c) Social Technologies LTD
+
+Sekretesspolicy  |  Rapportera missbruk

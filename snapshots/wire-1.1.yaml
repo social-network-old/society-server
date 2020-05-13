@@ -1,0 +1,8 @@
+# DO NOT MODIFY THIS FILE. See README.md to learn why.
+
+resolver: https://raw.githubusercontent.com/social-network/society-server/develop/snapshots/society-1.0.yaml
+name: society-1.1
+
+packages:
+- git: https://github.com/social-network/hsaml2
+  commit: 678997815033584e023205fe774d16201ccf8f62    # master (Feb 13, 2019)

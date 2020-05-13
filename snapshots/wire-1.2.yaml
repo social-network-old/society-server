@@ -1,0 +1,8 @@
+# DO NOT MODIFY THIS FILE. See README.md to learn why.
+
+resolver: https://raw.githubusercontent.com/social-network/society-server/develop/snapshots/society-1.1.yaml
+name: society-1.2
+
+packages:
+- cql-io-1.1.0  # the MR in society-1.0.yaml has been released on hackage.
+- cql-io-tinylog-0.1.0

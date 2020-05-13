@@ -1,0 +1,18 @@
+Society
+
+
+Hej ${name},
+
+Ditt Society-konto användes på:
+
+    ${date}
+    ${model}
+
+Du har installerat Society på en ny enhet eller installerat det igen på en befintlig enhet. Om detta inte var fallet, gå till Society inställningar, ta bort enheten och återställ ditt lösenord.
+
+Society teamet
+
+
+(c) Social Technologies LTD
+
+Sekretesspolicy  |  Rapportera missbruk

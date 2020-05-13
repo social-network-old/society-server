@@ -1,0 +1,31 @@
+defaults:
+  local: ../../package-defaults.yaml
+name: tasty-cannon
+version: '0.4.0'
+synopsis: Cannon Integration Testing Utilities
+category: Testing
+author: Social Technologies LTD
+maintainer: Social Technologies LTD <technology@social.network>
+copyright: (c) 2017 Social Technologies LTD
+license: AGPL-3
+dependencies:
+- aeson
+- async
+- base >=4.6 && <5
+- bytestring
+- bytestring-conversion
+- data-default-class
+- data-timeout
+- gundeck-types
+- exceptions
+- http-client >=0.5
+- http-types
+- imports
+- random
+- stm
+- transformers
+- tasty-hunit >=0.9
+- types-common >=0.16
+- websockets >=0.8
+library:
+  source-dirs: src

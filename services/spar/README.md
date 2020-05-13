@@ -1,0 +1,11 @@
+## Spar
+
+The service handling communication with SSO (Single Sign-On) Identity Providers.
+Internally, it talks to brig for manipulation of local user records
+and for creation of persistent cookies.
+
+See the [saml2-web-sso](https://github.com/social-network/saml2-web-sso) package for more details.
+
+### what's with the name?
+
+[spar](https://en.wikipedia.org/wiki/Spar_(sailing)): any ship's mast, boom, yard, or gaff

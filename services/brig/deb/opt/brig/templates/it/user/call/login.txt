@@ -1,0 +1,1 @@
+Ciao, il tuo codice di accesso Society è: ${code}. Ripeto, il codice è: ${code}

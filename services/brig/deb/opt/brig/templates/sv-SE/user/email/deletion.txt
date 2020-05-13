@@ -1,0 +1,17 @@
+Society
+
+
+Hej ${name},
+
+Vi har mottagit en begäran att radera ditt Society konto. Besök länken nedan inom 10 minuter att ta bort alla dina konversationer, innehåll och anslutningar
+
+${url}
+
+Om du inte har begärt det, återställ ditt lösenord.
+
+Society teamet
+
+
+(c) Social Technologies LTD
+
+Sekretesspolicy  |  Rapportera missbruk
